@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Application Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+      html, body {
+          background-image: url("www.png");
+          background-repeat:no-repeat;
+          background-position: center;
+          background-size: cover;
+      
+      }
+      body, div, form, input, select, textarea, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color:black;
+      font-style:oblique;
+      line-height: 22px;
+     position: relative;
+      }
+      h1 {
+      position:absolute;
+      margin:0;
+      font-size: 32px;
+      text-align: center;
+      color: rgb(12, 7, 7);
+      z-index: 2;
+      
+      }
+      h5 {
+      margin: 10px 0;
+      }
+      .testbox {
+      display: flex;
+      justify-content:start;
+  
+      height:fit-content;
+      padding: 20px;
+      }
+      form {
+      width: 50%;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+     
+     
+      }
+      
+      .banner::after {
+      content: "";
+      
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      input, select, textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      }
+      select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+      }
+      textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+      }
+           
+      .item input:hover, .item select:hover, .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 6px 0 #095484;
+      color: #095484;
+      }
+      .item {
+      position: relative;
+      margin: 10px 0;
+      }
+      input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+      }
+      .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #a9a9a9;
+      }
+      .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+      }
+      [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+      }
+      input[type=radio], input[type=checkbox]  {
+      display: none;
+      }
+      label.radio, label.check {
+      position: relative;
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      cursor: pointer;
+      }
+      .question span {
+      margin-left: 30px;
+      }
+      span.required {
+      margin-left: 0;
+      color: red;
+      }
+      .checkbox-item label {
+      margin: 5px 20px 10px 0;
+      }
+      
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #095484;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #0666a3;
+      }
+      @media (min-width: 568px) {
+      .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .city-item input {
+      width: calc(50% - 20px);
+      }
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+    </style>
+     <h1 >EDUCATION</h1>
+  </head>
+  <body>
+    <div class="testbox">
+    <form action="/">
+      <div class="banner">
+       
+      </div>
+      <div class="item">
+        <p>aadhar number</p>
+        <input type="text" name="name"/>
+      </div>
+      <div class="item">
+        <p>age</p>
+        <input type="number" name="bdate" required/>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      
+      <div class="item">
+        <p>Name <span class="required">*</span></p>
+        <input type="text" name="name" required/>
+      </div>
+      <div class="item">
+        
+          <select required>
+            <option value="">Purpose</option>
+            <option value="1">educational loan</option>
+            <option value="2">educational scholarships.</option>
+            <option value="3">reservations and concessions.</option>
+           
+          </select>
+        </div>
+      </div>
+     
+    
+        <div class="btn-block">
+          <button type="submit" href="/">Search</button>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>
